@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "lint": "next lint"
+    "eslint": "next lint --dir src --fix"
   },
   "dependencies": {
     "next": "12.2.0",
