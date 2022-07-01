@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "eslint": "next lint --dir src --fix"
+    "eslint": "next lint --dir src --fix",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "12.2.0",
@@ -18,6 +19,8 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.18.0",
     "eslint-config-next": "12.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
     "typescript": "4.7.4"
   }
 }
