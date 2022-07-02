@@ -1,8 +1,20 @@
-import "../styles/globals.scss";
+import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <Head>
+        <link rel="icon" href="/images/favicon.ico" />
+      </Head>
+      <DefaultSeo
+        title="東海大学学生ロケットプロジェクト"
+        description="東海大学学生ロケットプロジェクトの紹介及び活動報告を行うサイトです。"
+      />
+      <Component {...pageProps} />
+    </>
+  );
+};
 
 export default MyApp;
