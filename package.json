@@ -6,6 +6,7 @@
     "prepare": "husky install",
     "dev": "next dev",
     "build": "next build && next export",
+    "serve": "serve -p 8080 ./out",
     "eslint": "next lint --fix --dir src",
     "prettier": "prettier --write .",
     "stylelint": "stylelint --fix src/**/*.{css,scss}"
@@ -37,6 +38,7 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
+    "serve": "^13.0.2",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^4.0.0",
